@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_app_background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/quoteText"
+        android:layout_width="360dp"
+        android:layout_height="439dp"
+        android:gravity="clip_horizontal|clip_vertical|center_horizontal|center_vertical"
+        android:shadowColor="#FF6F00"
+        android:text="Welcome! Press New "
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <Button
+        android:id="@+id/showQuoteButton"
+        style="@android:style/Widget.Material.Button.Toggle"
+        android:layout_width="187dp"
+        android:layout_height="59dp"
+        android:background="#B7FF6F00"
+        android:ellipsize="middle"
+        android:shadowColor="#00070101"
+        android:text="New"
+        android:textColor="#FCFFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/quoteText"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/quoteText"
+        app:layout_constraintTop_toBottomOf="@+id/quoteText"
+        app:layout_constraintVertical_bias="0.393" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
